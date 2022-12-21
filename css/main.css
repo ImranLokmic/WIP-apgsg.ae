@@ -298,3 +298,51 @@ button:hover {
 .location-map{
     padding-top: 20px;
 }
+.copyright{
+    background-color: black;
+    color: rgb(161, 159, 159);
+    text-align: center;
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (max-width:460px) {
+    .header-navbar>ul>li>a{
+        font-size: 10px;
+    }
+    .main-content{
+        grid-template-areas:
+        'main-header main-header'
+        'main-a main-a '
+        'main-b main-b'
+        'main-d main-d' 
+        'main-c main-c';
+    }
+    .main-b{
+        padding: 10px 10px 10px 10px;
+    }
+    .main-c{
+        padding: 10px 10px 10px 10px;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width:370px) {
+    .hero>.hero-title {
+
+        font-size: 32px;
+
+    }
+    
+    .hero>.hero-subtitle {
+
+        font-size: 16px;
+    }
+    
+
+}
+@media only screen and (max-width:330px) {
+    body{
+        display: none;
+    }
+}
