@@ -300,24 +300,50 @@ button:hover {
 
 
 .footer-location {
-    color: black;
+    color: black;    display: grid;
+    grid-template-areas:
+        'location'
+        'address'
+        'phone'
+        'email'
+        'map'
+        'map'
+        'map'
+        'map';
+
 }
 .location-title{
     padding-top: 20px;
     margin-top: 8px;
     font-size: 21px;
+    display: flex;
+    grid-area: location;
+    align-items: center;
+    justify-content: center;
 }
 .location-address{
-    padding-top: 10px;
+    display: flex;
+    grid-area: address;
+    align-items: center;
+    justify-content: center;
 }
 .location-phone{
-    padding-top: 10px;
+    display: flex;
+    grid-area: phone;
+    align-items: center;
+    justify-content: center;
 }
 .location-email{
-    padding-top: 10px;
+    display: flex;
+    grid-area: email;
+    align-items: center;
+    justify-content: center;
 }
 .location-map{
-    padding-top: 20px;
+    display: flex;
+    grid-area: map;
+    align-items: center;
+    justify-content: center;
 }
 .copyright{
     background-color: black;
